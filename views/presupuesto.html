@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Oso Verde - Presupuestos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+          body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: rgba(40, 44, 52, 0.8);
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #43b581;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #369f6b;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox label {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+	<!-- Menú de navegación -->
+    <header>
+        <div class="logo">El Oso Verde</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuestos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+	<!-- Sección de formulario: permite a los usuarios solicitar un presupuesto. -->
+        <section class="form-section">
+            <h1>Solicitar Presupuesto</h1>
+	<!-- Este formulario se utiliza para que los usuarios soliciten un presupuesto. Todos los campos son obligatorios. -->
+            <form action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Introduce solo letras y espacios">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Introduce un email válido">
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Introduce un número de teléfono válido de 10 dígitos">
+
+                <label for="message">Solicite más información:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Acepto la política de privacidad</label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+	<!-- Pie de página: contiene enlaces de redes sociales, detalles de contacto e información de derechos de autor. -->
+    <footer>
+        <div class="footer-content">
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="../img/facebook-icon.png" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="../img/twitter-icon.png" alt="Twitter" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="../img/instagram-icon.png" alt="Instagram" width="24" height="24">
+                </a>
+            </div>
+        </div>
+        <p>Dirección: Calle Ficticia 123, Ciudad Mágica</p>
+        <p>&copy; 2025 El Oso Verde. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
