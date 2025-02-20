@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - El Oso Verde</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scriptval.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>El Oso Verde</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="nav-active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    	<main>
+	   <div class="main-container">
+            <section id="presupuesto">
+            	<h2>Solicita tu Presupuesto</h2>
+                <form id="form-presupuesto">
+    		<fieldset>
+        		<legend>Datos de Contacto</legend>
+        		<label for="nombre">Nombre:</label>
+        		<input type="text" id="nombre" name="nombre" required>
+			<label for="apellido">Apellido:</label>
+        		<input type="text" id="apellido" name="apellido" required>
+        		<label for="telefono">Teléfono:</label>
+        		<input type="tel" id="telefono" name="telefono" pattern="\d{9}" required>
+        		<label for="email">Correo Electrónico:</label>
+        		<input type="email" id="email" name="email" required>
+    		</fieldset>
+    		<fieldset>
+        		<legend>Detalles del Presupuesto</legend>
+        		<label for="producto">Producto:</label>
+       			<select id="producto" name="producto">
+            			<option value="100">Zangief - 100€</option>
+				<option value="200">Voja - 200€</option>
+				<option value="300">Garracruel - 300€</option>
+				<option value="400">Ezrim - 400€</option>
+				<option value="500">Rakdos - 500€</option>
+				<option value="600">Hinata - 600€</option>
+				<option value="700">Goro-Goro - 700€</option>
+				<option value="800">Satoru - 800€</option>
+        		</select>
+        		<label for="plazo">Plazo (meses):</label>
+        		<input type="number" id="plazo" name="plazo" min="1" max="24" required>
+        		<label>Extras:</label>
+        		<input type="checkbox" id="extra1" name="extra1" value="50"> Foil (+$50)
+        		<input type="checkbox" id="extra2" name="extra2" value="100"> Firmado (+$100)
+        		<p>Presupuesto total: <span id="total">$0</span></p>
+    		</fieldset>
+    		<button type="submit">Enviar</button>
+		</form>
+		<p id="mensaje-error" style="color: red;"></p>
+        </section>
+	</div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="../images/facebook-icon.png" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="../images/twitter-icon.png" alt="Twitter" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="../images/instagram-icon.png" alt="Instagram" width="24" height="24">
+                </a>
+            </div>
+        </div>
+        <p>Dirección: Calle Ficticia 123, Ciudad Mágica</p>
+        <p>&copy; 2025 El Oso Verde. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

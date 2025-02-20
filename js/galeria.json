@@ -1,0 +1,12 @@
+{ 
+  "cartas": [ 
+    { "nombre": "Zanguief, el ciclón rojo", "imagen": "../images/Carta1.jpg" }, 
+    { "nombre": "Voja, fauces del conclave", "imagen": "../images/Carta2.jpg" }, 
+    { "nombre": "El infame garracruel", "imagen": "../images/Carta3.jpg" }, 
+    { "nombre": "Ezrim, Director de la agencia", "imagen": "../images/Carta4.jpg" }, 
+    { "nombre": "Rakdos, patrón del caos", "imagen": "../images/Carta5.jpg" }, 
+    { "nombre": "Hinata, La corona del alba", "imagen": "../images/Carta6.jpg" }, 
+    { "nombre": "Goro-Goro, discipulo de Ryusei", "imagen": "../images/Carta7.jpg" }, 
+    { "nombre": "Satoru Umezawa", "imagen": "../images/Carta8.jpg" } 
+  ] 
+}

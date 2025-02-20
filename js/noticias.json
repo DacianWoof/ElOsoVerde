@@ -1,0 +1,24 @@
+{
+    "noticias": [
+        {
+            "titulo": "AETHERDRIFT: EL VOLANTE ESTÁ EN TUS MANOS",
+            "contenido": "¡Haz que tus rivales muerdan el polvo! Ponte al volante con Aetherdrift, una carrera multiversal hasta las cejas de adrenalina y jugadas mágicas en la que atravesarás tres mundos distintos.",
+            "imagen": "images/aetherdrift.jpg"
+        },
+        {
+            "titulo": "Torneo semanal",
+            "contenido": "Únete a nuestro torneo semanal y gana increíbles premios.",
+            "imagen": "images/torneo.jpg"
+        },
+        {
+            "titulo": "TARKIR: TORMENTA DRACÓNICA",
+            "contenido": "Tarkir es más grande y enérgico que nunca. Este mundo está repleto de acción trepidante, mecánicas de clanes dinámicas y poderosos dragones nuevos que aportarán potencia de fuego a tu colección.",
+            "imagen": "images/tarkir.jpg"
+        },
+	{
+            "titulo": "Preparación de mazos a medida",
+            "contenido": "Encuentra tu mazo ideal preparado por nuestros expertos",
+            "imagen": "images/mazos.jpg"
+        }
+    ]
+}
